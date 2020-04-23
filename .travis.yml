@@ -1,0 +1,10 @@
+language: java
+jdk: openjdk11
+git:
+    depth: 2
+    quiet: true
+branches:
+    only:
+    - master
+notifications:
+    email: false
