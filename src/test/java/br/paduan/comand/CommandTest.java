@@ -194,12 +194,12 @@ public class CommandTest {
     }
 
     @Test
-    public void testRunInfoCorrectCommand() {
+    public void testRunInfoInCorrectCommand() {
         Command.runAdd(lista, 1, "Nome1", "01/01/01", "91111-1111");
 
         boolean encontrou = Command.run(lista, "info x");
 
-        assertTrue("Busca deve falhar pois o comando está incorreto", encontrou);
+        assertFalse("Busca deve falhar pois o comando está incorreto", encontrou);
     }
 
     @Test
